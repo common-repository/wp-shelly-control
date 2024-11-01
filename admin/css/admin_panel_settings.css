@@ -1,0 +1,332 @@
+/* CSS FOR WP SHELLY CONTROL SETTINGS PAGE */
+
+:root {
+  --mcisc-primary-color: #3d6a9c;
+  --mcisc-secondary-color: #0f5381;
+  --mcisc-tertiary-color: #3e81cb;
+  --mcisc-background-color: #e9e9ec;
+  --mcisc-table-color: #f4f7f9;
+  --mcisc-border-color: #ccc;
+  --mcisc-grey-color: #838383;
+  --mcisc-orange-color: #eb8d12;
+  --mcisc-green-color: #36b751;
+  --mcisc-blue-color: #3787de;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+select,
+textarea {
+  border: 1px solid var(--mcisc-border-color) !important;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  padding: 2px 8px;
+  width: 100%;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 999;
+}
+label {
+  cursor: auto;
+}
+body {
+  background-color: var(--mcisc-background-color);
+}
+.mcisc_title {
+  color: var(--mcisc-primary-color);
+}
+.mcisc_account_wrap td,
+.mcisc_settings_wrap td {
+  font-size: 13px;
+}
+
+/* ACCOUNT WRAP */
+td .mcisc_settings_label {
+  text-align: left;
+  font-weight: 600;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  display: block;
+}
+h2.mcisc_title {
+  color: #0f5381;
+  height: 25px;
+  padding-top: 12px;
+}
+.mcisc_account_wrap,
+.mcisc_settings_wrap {
+  border: 1px solid #cccccc;
+  background-color: #fff;
+  margin-bottom: 25px;
+  max-width: 900px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.mcisc_settings_wrap {
+  padding: 30px 25px 15px;
+}
+.mcisc_first_account_header,
+.mcisc_first_account {
+  margin: 5px 20px;
+  font-size: 14px;
+  color: var(--mcisc-orange-color);
+}
+.mcisc_first_account_header {
+  font-weight: 700;
+}
+.mcisc_first_account {
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+table.mcisc_account_list {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--mcisc-table-color);
+  margin-bottom: 30px;
+  border-bottom: 1px solid var(--mcisc-border-color);
+  border-top-left-radius: 10px;
+  -webkit-border-top-left-radius: 10px;
+  -moz-border-top-left-radius: 10px;
+  -ms-border-top-left-radius: 10px;
+  -o-border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+  -moz-border-top-right-radius: 10px;
+  -ms-border-top-right-radius: 10px;
+  -o-border-top-right-radius: 10px;
+}
+.mcisc_account_row_header th {
+  background-color: var(--mcisc-primary-color);
+  color: #fff;
+  font-weight: 400;
+  padding: 9px 15px;
+  text-align: left;
+}
+.mcisc_account_row_header th:first-child {
+  border-top-left-radius: 7px;
+  -webkit-border-top-left-radius: 7px;
+  -moz-border-top-left-radius: 7px;
+  -ms-border-top-left-radius: 7px;
+  -o-border-top-left-radius: 7px;
+}
+.mcisc_account_row_header th:last-child {
+  border-top-right-radius: 7px;
+  -webkit-border-top-right-radius: 7px;
+  -moz-border-top-right-radius: 7px;
+  -ms-border-top-right-radius: 7px;
+  -o-border-top-right-radius: 7px;
+}
+.mcisc_account_list td {
+  padding: 10px 15px;
+}
+td.mcisc_account_delete {
+  text-align: right;
+}
+.mcisc_account_wrap input[type="submit"],
+.mcisc_settings_wrap input[type="submit"],
+.mcisc_controlsettings_wrap input[type="submit"] {
+  background-color: var(--mcisc-secondary-color);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  margin: 8px 0;
+  padding: 13px 25px;
+  cursor: pointer;
+  z-index: 999;
+  position: relative;
+}
+#account_save {
+  padding: 10px 20px;
+}
+td.mcisc_account_delete input {
+  margin: 0 !important;
+  padding: 10px 0 !important;
+  background-color: transparent !important;
+  color: var(--mcisc-orange-color) !important;
+  cursor: pointer;
+}
+td.mcisc_account_delete .dashicons-trash {
+  margin: 0;
+  font-size: 19px;
+  color: var(--mcisc-orange-color) !important;
+  padding: 10px 0;
+}
+
+/* SETTINGS WRAP */
+.mcisc_settings {
+  width: 100%;
+  padding: 30px 20px 25px;
+  background-color: var(--mcisc-table-color);
+  border: 1px solid #ededed;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.mcisc_header_wrap {
+  margin-bottom: 20px;
+}
+.mcisc_settings_wrap .mcisc_description {
+  display: block;
+  font-size: 14px;
+  color: var(--mcisc-grey-color);
+  margin-bottom: 20px;
+}
+.mcisc_settings_label.checkline {
+  display: inline-block;
+  margin-right: 20px;
+}
+.mcisc_settings_row input[type="checkbox"] {
+  margin-top: -3px;
+  margin-right: 7px;
+}
+.mcisc_settings_row input[type="checkbox"]:checked::before {
+  margin-left: -4px !important;
+  margin-top: -3px !important;
+}
+.mcisc_settings_row.button_row {
+  margin: 20px 0 20px;
+}
+.mcisc_account_form {
+  min-width: 760px;
+  padding: 0 30px 25px;
+}
+.mcisc_account_form label {
+  width: 150px;
+}
+.mcisc_account_form input:not(input[type="submit"]) {
+  width: 100%;
+}
+
+@media (min-width: 970px) {
+  .mcisc_account_form input:not(input[type="submit"]) {
+    min-width: 495px;
+  }
+}
+
+.mcisc_arrows {
+  font-size: 25px;
+  font-weight: 900;
+  text-align: center;
+  display: block;
+  animation: mcisc_arrow 1s infinite;
+}
+@keyframes mcisc_arrow {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(7px);
+    -webkit-transform: translateY(7px);
+    -moz-transform: translateY(7px);
+    -ms-transform: translateY(7px);
+    -o-transform: translateY(7px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* LICENSE WRAP */
+.mcisc_wrap_license {
+  padding: 30px 0;
+}
+.mcisc_wrap_license .mcisc_btn.submit_mcisc_activate {
+  padding: 10px 20px;
+}
+.mcisc_wrap_license .mcisc_btn.submit_mcisc_activate:focus {
+  opacity: 0.9;
+}
+.mcisc_wrap_license .mcisc_btn.green {
+  background-color: rgb(247, 255, 247) !important;
+  border: 1px solid green;
+  font-size: 14px !important;
+  color: green !important;
+  margin-left: 5px;
+  padding: 9px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.mcisc_wrap_license .mcisc_btn.green:hover,
+.mcisc_wrap_license .mcisc_btn.green:focus {
+  cursor: pointer;
+  opacity: 0.9;
+  box-shadow: 0 0 0 1px #c0e0c0;
+}
+.mcisc_wrap_license label {
+  display: block;
+  margin-bottom: 10px;
+}
+.mcisc_wrap_license {
+  max-width: 550px;
+}
+.mcisc_wrap_license_active #mcisc_deactivate {
+  background-color: #ffecd3;
+  padding: 9px 15px;
+  margin-left: 30px;
+  font-size: 13px;
+  float: right;
+  color: var(--mcisc-orange-color);
+  font-weight: 600;
+}
+#mcisc_premium_active {
+  color: var(--mcisc-green-color);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+}
+#mcisc_premium_active::before {
+  content: url(../../front/assets/img/ok.png);
+  transform: scale(0.034);
+  float: left;
+  display: block;
+  height: 5px;
+  width: 40px;
+  -webkit-transform: scale(0.034);
+  -moz-transform: scale(0.034);
+  -ms-transform: scale(0.034);
+  -o-transform: scale(0.034);
+}
+.deactivate_text {
+  color: var(--mcisc-grey-color);
+  font-size: 13px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  padding: 0 30px;
+}
+.mcisc_wrap_license_active {
+  padding: 15px 0 10px;
+}
+.deactivate_btn_wrap {
+  height: 50px;
+}
+.mcisc_test_notice {
+  display: block;
+  padding: 10px;
+  margin-top: 0;
+  margin-left: 0;
+  width: 100%;
+  background: #f14d4d;
+  color: #fff;
+  text-align: center;
+  font-size: 19px;
+  font-weight: 600;
+}

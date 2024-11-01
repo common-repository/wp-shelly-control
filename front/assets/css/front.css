@@ -1,0 +1,205 @@
+/* CSS FOR WP SHELLY CONTROL FRONY PAGES */
+
+:root {
+  --mcisc-primary-color: #3d6a9c;
+  --mcisc-secondary-color: #0f5381;
+  --mcisc-tertiary-color: #3e81cb;
+  --mcisc-background-color: #e9e9ec;
+  --mcisc-table-color: #f4f7f9;
+  --mcisc-border-color: #ccc;
+  --mcisc-grey-color: #838383;
+  --mcisc-orange-color: #eb8d12;
+  --mcisc-green-color: #36b751;
+  --mcisc-blue-color: #3787de;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+select,
+textarea {
+  border: 1px solid var(--mcisc-border-color) !important;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  padding: 2px 8px;
+  width: 100%;
+  margin-bottom: 5px;
+}
+label {
+  cursor: auto;
+}
+body {
+  background-color: var(--mcisc-background-color);
+}
+.mcisc_title {
+  color: var(--mcisc-primary-color);
+}
+
+/* DEVICES LIST */
+.mcisc_device_list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  grid-gap: 20px;
+  padding: 30px;
+}
+.mcisc_device {
+  border: 1px solid #cccccc;
+  padding: 20px;
+  box-shadow: 0 0 5px #00000026;
+  background-color: #fff;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+}
+.mcisc_device p {
+  margin: 2px 0 !important;
+  font-size: 13px;
+  line-height: 1.5;
+}
+.mcisc_device li {
+  margin: 0 0 0 15px;
+}
+.mcisc_device_name {
+  text-align: center;
+  font-size: 16px !important;
+  font-weight: 500;
+  color: var(--mcisc-primary-color);
+}
+.mcisc_device ul {
+  margin: 0;
+}
+.mcisc_controlsettings_wrap {
+  width: 100%;
+}
+.mcisc_controlsettings_wrap .mcisc_settings {
+  margin: 0 auto;
+}
+.mcisc_controlsettings_wrap select {
+  width: 100%;
+  max-width: none;
+}
+.mcisc_controlsettings_wrap h3 {
+  text-align: center;
+}
+.mcisc_controlsettings_wrap label {
+  font-weight: 600;
+  display: block;
+  margin-right: 5px;
+}
+.mcisc_controlsettings_wrap span.mcisc_annotation {
+  color: #686868;
+  display: block;
+  margin-bottom: 18px;
+}
+.mcisc_controlsettings_wrap #control_save {
+  float: right;
+}
+
+.mcisc_device_button {
+  display: block;
+  margin: 0 auto;
+  width: 67px;
+  height: 67px;
+  margin: 10px auto;
+  border: 9px solid #ebebeb;
+  color: #ffffff;
+  background: #cccccc;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.mcisc_device_button:hover {
+  opacity: 0.9;
+}
+.mcisc_device_ison {
+  background-color: var(--mcisc-green-color) !important;
+}
+.mcisc_device_isoff {
+  background-color: #838383 !important;
+}
+.mcisc_power_ico {
+  left: -7px;
+  top: -3px;
+  width: 20px;
+  max-width: none;
+}
+.mcisc_device_status {
+  text-align: center;
+  color: #686868;
+}
+.mcisc_device hr {
+  border-top: 1px solid #dcdcde !important;
+  border-bottom: 1px solid #f6f7f7 !important;
+  background-color: transparent !important;
+  height: 1px !important;
+  margin-bottom: 7px !important;
+  margin-top: 7px !important;
+}
+.mcisc_online {
+  display: block;
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.mcisc_online.mcisc_active {
+  background-color: #24b744;
+}
+.mcisc_online {
+  background-color: #d8d8d8;
+}
+.mcisc_sync_btn_wrap {
+  padding-left: 30px;
+}
+.mcisc_blue_btn,
+#control_save {
+  background-color: var(--mcisc-tertiary-color);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  cursor: pointer;
+}
+.mcisc_sync_btn_wrap .mcisc_blue_btn {
+  margin: 8px 0;
+  padding: 10px 20px;
+}
+.mcisc_device_power {
+  display: block;
+  text-align: center;
+  font-weight: 600;
+}
+.mcisc_device_disabled {
+  opacity: 0.2 !important;
+  pointer-events: none;
+}
+.mcisc_devices_limit .mcisc_device_ison {
+  background-color: #bdbdbd !important;
+}
+.mcisc_device_button,
+.mcisc_device_button:hover,
+.mcisc_device_button:focus {
+  background: #cccccc;
+}
+.mcisc_devices_test {
+  background: #fdc6c6;
+}
+.mcisc_test_device {
+  border: 1px solid red;
+}

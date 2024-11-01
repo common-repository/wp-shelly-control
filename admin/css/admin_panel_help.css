@@ -1,0 +1,88 @@
+/* CSS FOR WP SHELLY CONTROL HELP PAGE */
+
+:root {
+  --mcisc-primary-color: #3d6a9c;
+  --mcisc-secondary-color: #0f5381;
+  --mcisc-tertiary-color: #3e81cb;
+  --mcisc-background-color: #e9e9ec;
+  --mcisc-table-color: #f4f7f9;
+  --mcisc-border-color: #ccc;
+  --mcisc-grey-color: #838383;
+  --mcisc-orange-color: #eb8d12;
+  --mcisc-green-color: #36b751;
+  --mcisc-blue-color: #3787de;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+select,
+textarea {
+  border: 1px solid var(--mcisc-border-color) !important;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  padding: 2px 8px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+label {
+  cursor: auto;
+}
+body {
+  background-color: var(--mcisc-background-color);
+}
+.mcisc_title {
+  color: var(--mcisc-primary-color);
+}
+.mcisc_header_wrap {
+  margin-bottom: 15px;
+}
+
+/* HELP WRAP */
+.mcisc_help_content {
+  padding: 5px 30px;
+}
+.mcisc_help_content h2 {
+  font-size: 21px;
+  text-decoration: underline;
+  margin: 30px 0 37px;
+  color: var(--mcisc-primary-color);
+}
+
+.mcisc_help_ol {
+  font-size: 14px;
+  font-weight: 400;
+}
+.mcisc_help_ol b {
+  font-weight: 700;
+}
+.mcisc_help_ol li {
+  margin-bottom: 30px;
+}
+.mcisc_help_ol li::marker {
+  font-size: 18px;
+  color: var(--mcisc-primary-color);
+  font-weight: 700;
+}
+.mcisc_img_help {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  margin: 20px 0;
+}
+.mcisc_test_notice {
+  display: block;
+  padding: 10px;
+  margin-top: 0;
+  margin-left: 0;
+  width: 100%;
+  background: #f14d4d;
+  color: #fff;
+  text-align: center;
+  font-size: 19px;
+  font-weight: 600;
+}
